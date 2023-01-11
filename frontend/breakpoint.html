@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Murna Chen">
+    <title>Breakpoint</title>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    /* all size*/
+    .test-area {
+        padding: 20px;
+        border-radius: 2px;
+        font-weight: 600;
+    }
+    .cube{
+        padding: 20px;
+        border-radius: 2px;
+        font-weight: 600;
+        border: 3px solid #B3D847;
+        background-color: #EBF9BF;
+    }
+
+    /* laptop */
+    @media (min-width: 800px) and (max-width: 1920px) {
+        .test-area {
+            background-color: papayawhip;
+            color: darkorange;
+        }
+
+        .only-mobile {
+            display: none;
+
+        }
+
+        .only-tablet {
+            display: none;
+        }
+    }
+
+    /* tablet */
+    @media (max-width: 799px) and (min-width: 577px) {
+        .test-area {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        .only-mobile {
+            display: none;
+
+        }
+
+        .only-laptop {
+            display: none;
+        }
+    }
+
+    /* mobile */
+    @media (max-width: 576px) {
+        .test-area {
+            background-color: khaki;
+            color: darkgoldenrod;
+        }
+
+        .only-tablet {
+            display: none;
+        }
+
+        .only-laptop {
+            display: none;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Logo Here</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guideline.html">Guideline</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="breakpoint.html">Breakpoint</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 這是客製化斷點 -->
+    <div class="container-fluid p-5 mt-5">
+        <div class="row">
+            <div>這是客製化斷點</div>
+        </div>
+        <div>
+            <p class="test-area only-mobile">我是手機版</p>
+            <p class="test-area only-tablet">我是平板版</p>
+            <p class="test-area only-laptop">我是電腦版</p>
+        </div>
+    </div>
+    <!-- 這是Bootstrap斷點 -->
+    <div class="container-fluid p-5">
+        <div class="row">
+            <div>這是Bootstrap斷點</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-12 cube">a</div>
+            <div class="col-lg-2 col-md-4 col-sm-12 cube">b</div>
+            <div class="col-lg-2 col-md-4 col-sm-12 cube">c</div>
+            <div class="col-lg-2 col-md-4 col-sm-12 cube">d</div>
+            <div class="col-lg-2 col-md-4 col-sm-12 cube">e</div>
+            <div class="col-lg-2 col-md-4 col-sm-12 cube">f</div>
+        </div>
+    </div>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

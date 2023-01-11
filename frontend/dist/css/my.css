@@ -1,0 +1,36 @@
+.height-90{
+	height: 90px;
+}
+.to-top{
+	height: 50px;
+	width: 50px;
+	border-radius: 300px;
+	position: fixed;
+	display: flex;
+	background-color: lightgray;
+	opacity: 0.5;
+	bottom: 10px;
+	right: 10px;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.blue{
+	background-color: #FFDFDF;
+	border: 2px solid #BEE3FF;
+}
+.scrollspy-example{
+	height: 250px;
+	border: 1px solid #dee2e6;
+	border-radius: 5px;
+	overflow: auto;
+	padding: 15px;
+}
+body{
+	padding-bottom: 0 !important;
+}
+
+.bg-purple{
+	background-color: #502d19;
+}
