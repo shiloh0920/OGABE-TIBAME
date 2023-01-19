@@ -31,9 +31,17 @@ body{
 	padding-bottom: 0 !important;
 }
 
-.bg-headcolor{
+.bg-headercolor{
 	background-color: #502d19;
 }
 .bg-footercolor{
 	background-color: #2a4b36;
+}
+
+.bg-columncolor{
+	background-color: #7257d4;
+}
+.columncolor{
+	font-weight:bold;
+	color:#FFFFFF;
 }
