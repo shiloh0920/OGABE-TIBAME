@@ -30,10 +30,11 @@
 body{
 	padding-bottom: 0 !important;
 }
-
+/*調最上面那一條header的顏色*/
 .bg-headercolor{
 	background-color: #502d19;
 }
+/*調footer的顏色*/
 .bg-footercolor{
 	background-color: #2a4b36;
 }
@@ -41,8 +42,10 @@ body{
 .bg-columncolor{
 	background-color: #7257d4;
 }
+/*調輪播區大字的顏色*/
 .columncolor{
 	font-weight:bold;
 	color:#FFFFFF;
 }
+/*調rest_index裡按鈕顏色*/
 .rest-btn-primary{--bs-btn-color:#fff;--bs-btn-bg:#FB0909;--bs-btn-border-color:#FB0909;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#F79e1b;--bs-btn-hover-border-color:#F79e1b;--bs-btn-focus-shadow-rgb:49,132,253;--bs-btn-active-color:#fff;--bs-btn-active-bg:#F79e1b;--bs-btn-active-border-color:#F79e1b;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#FB0909;--bs-btn-disabled-border-color:#FB0909}
