@@ -45,3 +45,4 @@ body{
 	font-weight:bold;
 	color:#FFFFFF;
 }
+.rest-btn-primary{--bs-btn-color:#fff;--bs-btn-bg:#FB0909;--bs-btn-border-color:#FB0909;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#F79e1b;--bs-btn-hover-border-color:#F79e1b;--bs-btn-focus-shadow-rgb:49,132,253;--bs-btn-active-color:#fff;--bs-btn-active-bg:#F79e1b;--bs-btn-active-border-color:#F79e1b;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#FB0909;--bs-btn-disabled-border-color:#FB0909}
