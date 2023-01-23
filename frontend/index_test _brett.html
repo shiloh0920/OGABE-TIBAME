@@ -17,7 +17,6 @@
 
   <body>
     <header>
-      <!-- 最上面的那條開始 -->
       <nav
         class="navbar navbar-expand-md fixed-top navbar-dark bg-headercolor"
         aria-label="Fourth navbar example"
@@ -75,10 +74,7 @@
               </li>
 
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="forum_welcome.html"
+                <a class="nav-link" aria-current="page" href="breakpoint.html"
                   >論壇</a
                 >
               </li>
@@ -105,7 +101,8 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >登入</a
-                ><!--active是調整成高亮-->
+                ><!--active是調整成高亮
+                -->
               </li>
               <!-- Button trigger modal -->
               <button
@@ -121,13 +118,12 @@
         </div>
       </nav>
     </header>
-    <!-- 最上面的那條結束 -->
     <main>
       <!-- go to top -->
       <div class="to-top">
         <a href="#">TOP</a>
       </div>
-      <!-- Model註冊彈跳視窗 -->
+      <!-- Modal註冊彈跳視窗 -->
       <div
         class="modal fade"
         id="staticBackdrop"
@@ -213,7 +209,6 @@
         </div>
       </div>
       <!-- model end -->
-      <!-- 輪播區carousel開始 -->
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -239,21 +234,22 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="images\coffeesohp7dark.jpg"
-              class="figure-img img-fluid rounded"
-              alt="Coffee Shop"
-            />
-            <!-- <rect width="100%" height="100%" fill="#777" /> -->
-            <!--滾動視窗調顏色的地方-->
+            <span>
+              <img
+                src="images\coffeesohp7dark.jpg"
+                class="figure-img img-fluid rounded"
+                alt="Coffee Shop"
+              /><rect width="100%" height="100%" fill="#777" />
+            </span>
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>心動不如馬上行動!</h1>
+                <h1 class="columncolor">喝一杯不夠，你有喝兩杯嗎?</h1>
                 <p>
-                  現在註冊會員，還可享有一系列優惠活動，今天就加入我們，一起享受咖啡所帶來的喜悅吧!
+                  Some representative placeholder content for the first slide of
+                  the carousel.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="#">註冊會員</a>
+                  <a class="btn btn-lg btn-primary" href="#">今天就註冊吧!</a>
                 </p>
               </div>
             </div>
@@ -264,15 +260,14 @@
               class="figure-img img-fluid rounded"
               alt="Coffee Shop"
             />
-            <!-- <rect width="100%" height="100%" fill="#777" /> -->
-            <!--滾動視窗調顏色的地方-->
             <div class="container">
               <div class="carousel-caption">
-                <h1>獨樂樂，不如眾樂樂!</h1>
+                <h1 class="columncolor">這四年你喝得起咖啡嗎?</h1>
                 <p>
-                  歡迎一起加入論壇，來與世界各地的咖啡愛好者互相"切磋"、討論、分享你對咖啡的喜好!
+                  Some representative placeholder content for the second slide
+                  of the carousel.
                 </p>
-                <p><a class="btn btn-lg btn-primary" href="#">加入論壇</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -282,13 +277,12 @@
               class="figure-img img-fluid rounded"
               alt="Coffee Shop"
             />
-            <!-- <rect width="100%" height="100%" fill="#777" /> -->
-            <!--滾動視窗調顏色的地方-->
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>再忙，也要跟你喝杯咖啡!</h1>
+                <h1 class="columncolor">再忙，也要跟你喝杯咖啡</h1>
                 <p>
-                  現代人步調繁忙、生活圈小，不僅沒時間交朋友，也沒時間慢慢品嘗咖啡，<br />既然如此，何不入內參觀，來場美麗的邂逅!
+                  Some representative placeholder content for the third slide of
+                  this carousel.
                 </p>
                 <p>
                   <a class="btn btn-lg btn-primary" href="#">購物商城</a>
@@ -316,31 +310,30 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- 輪播區carousel結束 -->
-      <!-- 三個圖區開始 -->
       <div class="container marketing">
         <div class="row">
           <div class="col-lg-4">
-            <title>餐廳一</title>
+            <title>Placeholder</title>
             <img
               src="images\coffeesohp3.jpg"
               class="figure-img img-fluid rounded"
-              alt="Mo Cafe"
+              alt="Coffee Shop"
             />
             <!-- <rect width="100%" height="100%" fill="#777" />
               <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
-            <h2 class="fw-normal">餐廳一: Mo Cafe</h2>
+
+            <h2 class="fw-normal">餐廳一</h2>
             <p class="height-90">
               Some representative placeholder content for the three columns of
               text below the carousel. This is the first column.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">詳細介紹 &raquo;</a>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <title>餐廳二</title>
+            <title>Placeholder</title>
             <img
               src="images\coffeesohp4.jpg"
               class="figure-img img-fluid rounded"
@@ -348,18 +341,19 @@
             />
             <!-- <rect width="100%" height="100%" fill="#777" />
               <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
-            <h2 class="fw-normal">餐廳二: Kizuna 絆</h2>
+
+            <h2 class="fw-normal">餐廳二</h2>
             <p class="height-90">
               Another exciting bit of representative placeholder content. This
               time, we've moved on to the second column.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">詳細介紹 &raquo;</a>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <title>餐廳三</title>
+            <title>Placeholder</title>
             <img
               src="images\coffeesohp5.jpg"
               class="figure-img img-fluid rounded"
@@ -367,17 +361,18 @@
             />
             <!-- <rect width="100%" height="100%" fill="#777" />
               <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
-            <h2 class="fw-normal">餐廳三: 旅人 Cafe</h2>
+
+            <h2 class="fw-normal">餐廳三</h2>
             <p class="height-90">
               And lastly this, the third column of representative placeholder
               content.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">詳細介紹 &raquo;</a>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
             </p>
           </div>
         </div>
-        <!-- 三個圖區結束 -->
+        <!-- 三個圓圈-start -->
         <hr class="featurette-divider" />
         <div class="row featurette">
           <div class="col-md-7">
