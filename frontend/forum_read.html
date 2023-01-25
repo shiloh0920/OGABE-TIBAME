@@ -14,64 +14,60 @@
     <link href="dist/css/carousel.css" rel="stylesheet" />
     <link href="dist/css/my.css" rel="stylesheet" />
     <style>
-      
-        h1{
-            text-align: center;
-            margin-top: 3%;
-            margin-bottom: 3%;
-        }
-        .forum_list{
-            border: 1px grey;
-            border-radius: 100px;
-            border-width: 0%;
-        }
-        .container{
-
-            height:100%;
-        }
-        .table{
-            text-align: center;
-        }
-        .forum_page{
-            text-align: center;
-
-        }
-        .placeholder col-2 bg-light{
-            text-align: center;
-        }
-        .forum_function{
-            margin-left: 11.30%;
-        }
-        .forum_read{
-            border: 1px grey;
-            border-radius: 100px;
-            border-width: 0%;
-            
-        }
-        .title_box{
-            border-bottom: solid 1px;
-        }
-        .article_content{
-            border-bottom:1px solid black ;
-            width: 100%;
-            height: 200px;
-        }
-        .forum_article_type{
-            margin-bottom: 10px;
-        }
-        .forum_choose{
-            float:right
-        }
-        .forum_btn {
-            float: right;
-        }
+      h1 {
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+      .forum_list {
+        border: 1px grey;
+        border-radius: 100px;
+        border-width: 0%;
+      }
+      .container {
+        height: 100%;
+      }
+      .table {
+        text-align: center;
+      }
+      .forum_page {
+        text-align: center;
+      }
+      .placeholder col-2 bg-light {
+        text-align: center;
+      }
+      .forum_function {
+        margin-left: 11.3%;
+      }
+      .forum_read {
+        border: 1px grey;
+        border-radius: 100px;
+        border-width: 0%;
+      }
+      .title_box {
+        border-bottom: solid 1px;
+      }
+      .article_content {
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: 200px;
+      }
+      .forum_article_type {
+        margin-bottom: 10px;
+      }
+      .forum_choose {
+        float: right;
+      }
+      .forum_btn {
+        float: right;
+      }
     </style>
   </head>
 
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-md fixed-top navbar-dark bg-headcolor"
+        class="navbar navbar-expand-md fixed-top navbar-dark bg-headercolor"
         aria-label="Fourth navbar example"
       >
         <div class="container-fluid">
@@ -127,7 +123,10 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="forum_welcome.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="forum_welcome.html"
                   >論壇</a
                 >
               </li>
@@ -261,112 +260,206 @@
           </div>
         </div>
       </div>
-     
-     
-        <div class="container">
-            <div class="forum_read" style="background-color: #EAE0DA;">
-                <h1>瀏覽文章</h1>
-            </div>
-            <div class="title_box">
-                <h2 style="display: inline-block; color: wheat;" class="article_type_id">關於選豆</h2>
-                <h5 style="display: inline-block; margin-left: 30px;" class="article_title">賴比瑞亞相關提問</h5>
-                <span style="display: inline-block; margin-left: 110px;"class="user_id">創作者會員編號 : 001</span>
-                <span style="display: inline-block; margin-left: 110px;"class="post_datetime">發布日期 : 2023/01/20</span>
-                <!--以下不明 -->
-                <button type="button" class="btn btn-outlineprimary" data-bs-toggle="modal" data-bs-target="#systemnote" style="margin-left:90px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16"  style="margin-right:10px;">
-                        <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                      </svg>加入收藏
-                  </button>
-                  <div class="modal fade" id="systemnote" tabindex="-1" aria-labelledby="systemnote" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">溫馨提醒</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          已成功將此文章加入收藏 
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉視窗</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-outlineprimary" data-bs-toggle="modal" data-bs-target="#systemnote">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16" style="margin-right:10px;">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-                      </svg>檢舉文章
-                  </button>
-                  <div class="modal fade" id="systemnote" tabindex="-1" aria-labelledby="systemnote" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">溫馨提醒</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          已成功將此文章加入收藏 
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉視窗</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="article_content">
-                <p>這裡放文章內容</p>
-                <div>
-               <a href="" class="link-dark"  style="text-decoration: none;">...繼續閱讀</a>
-            </div>
-           </div>
-           <table class="table table-borderless" style="border-bottom: solid 1px black;" >
-            <thead>
-                 <tr>
-                     <th style="float: left;" class="user_id">會員編號</th>
-                     <th class="reply_content">留言內容</th>
-                     <th style="float: right;" class="reply_datetime">留言回覆時間</th>
-                 </tr>
-            </thead>
-            <tbody >
-                <tr>
-                    <td style="float: left;">001</td>
-                    <td>新年快樂</td>
-                    <td style="float: right;" >2023/01/22</td>
-                </tr>
-                <tr>
-                    <td style="float: left;">002</td>
-                    <td>Happy New Year</td>
-                    <td style="float: right;" >2023/01/22</td>
-                </tr>
-                <tr>
-                    <td style="float: left;">003</td>
-                    <td>兔年行大運</td>
-                    <td style="float: right;" >2023/01/22</td>
-                </tr>
-                <tr>
-                    <td style="float: left;">004</td>
-                    <td>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</td>
-                    <td style="float: right;" >2023/01/22</td>
-                </tr>
-                <tr>
-                    <td style="float: left;">005</td>
-                    <td>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</td>
-                    <td style="float: right;" >2023/01/22</td>
-                </tr>  
-            </tbody>
-         </table>
-         <form action="https://tw.yahoo.com/">
-            <textarea name="reply_content" cols="150" rows="4" placeholder="請寫下您的留言"></textarea>
-                <div class="forum_btn">
-                     <button type="submit" class="btn btn-outline-secondary"> 提交</button>
-                    <a href="forum.html" class="btn btn-outline-secondary" >返回文章列表</a>
+
+      <div class="container">
+        <div class="forum_read" style="background-color: #eae0da">
+          <h1>瀏覽文章</h1>
+        </div>
+        <div class="title_box">
+          <h2
+            style="display: inline-block; color: wheat"
+            class="article_type_id"
+          >
+            關於選豆
+          </h2>
+          <h5
+            style="display: inline-block; margin-left: 30px"
+            class="article_title"
+          >
+            賴比瑞亞相關提問
+          </h5>
+          <span
+            style="display: inline-block; margin-left: 110px"
+            class="user_id"
+            >創作者會員編號 : 001</span
+          >
+          <span
+            style="display: inline-block; margin-left: 110px"
+            class="post_datetime"
+            >發布日期 : 2023/01/20</span
+          >
+          <!--以下不明 -->
+          <button
+            type="button"
+            class="btn btn-outlineprimary"
+            data-bs-toggle="modal"
+            data-bs-target="#systemnote"
+            style="margin-left: 90px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-suit-heart"
+              viewBox="0 0 16 16"
+              style="margin-right: 10px"
+            >
+              <path
+                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+              /></svg
+            >加入收藏
+          </button>
+          <div
+            class="modal fade"
+            id="systemnote"
+            tabindex="-1"
+            aria-labelledby="systemnote"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">溫馨提醒</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
+                <div class="modal-body">已成功將此文章加入收藏</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    關閉視窗
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outlineprimary"
+            data-bs-toggle="modal"
+            data-bs-target="#systemnote"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-exclamation-circle"
+              viewBox="0 0 16 16"
+              style="margin-right: 10px"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"
+              /></svg
+            >檢舉文章
+          </button>
+          <div
+            class="modal fade"
+            id="systemnote"
+            tabindex="-1"
+            aria-labelledby="systemnote"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">溫馨提醒</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">已成功將此文章加入收藏</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    關閉視窗
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article_content">
+          <p>這裡放文章內容</p>
+          <div>
+            <a href="" class="link-dark" style="text-decoration: none"
+              >...繼續閱讀</a
+            >
+          </div>
+        </div>
+        <table
+          class="table table-borderless"
+          style="border-bottom: solid 1px black"
+        >
+          <thead>
+            <tr>
+              <th style="float: left" class="user_id">會員編號</th>
+              <th class="reply_content">留言內容</th>
+              <th style="float: right" class="reply_datetime">留言回覆時間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="float: left">001</td>
+              <td>新年快樂</td>
+              <td style="float: right">2023/01/22</td>
+            </tr>
+            <tr>
+              <td style="float: left">002</td>
+              <td>Happy New Year</td>
+              <td style="float: right">2023/01/22</td>
+            </tr>
+            <tr>
+              <td style="float: left">003</td>
+              <td>兔年行大運</td>
+              <td style="float: right">2023/01/22</td>
+            </tr>
+            <tr>
+              <td style="float: left">004</td>
+              <td>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</td>
+              <td style="float: right">2023/01/22</td>
+            </tr>
+            <tr>
+              <td style="float: left">005</td>
+              <td>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</td>
+              <td style="float: right">2023/01/22</td>
+            </tr>
+          </tbody>
+        </table>
+        <form action="https://tw.yahoo.com/">
+          <textarea
+            name="reply_content"
+            cols="150"
+            rows="4"
+            placeholder="請寫下您的留言"
+          ></textarea>
+          <div class="forum_btn">
+            <button type="submit" class="btn btn-outline-secondary">
+              提交
+            </button>
+            <a href="forum.html" class="btn btn-outline-secondary"
+              >返回文章列表</a
+            >
+          </div>
         </form>
-    </div>
+      </div>
     </main>
     <!-- footer -->
     <footer

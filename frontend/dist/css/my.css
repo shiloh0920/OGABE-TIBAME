@@ -63,3 +63,8 @@ body{
 	font-size:20px;
 	font-weight:bold;		
 }
+.h_center{
+	display: flex;
+	justify-content: center;    
+	align-items: center;
+}

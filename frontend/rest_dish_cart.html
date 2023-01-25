@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-tw">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,84 +9,15 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.108.0" />
-    <title>歡迎來到論壇</title>
+    <title>OGABE|餐廳購物車</title>
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="dist/css/carousel.css" rel="stylesheet" />
     <link href="dist/css/my.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
-    <style type="text/css">
-        *{
-            margin: 0%;
-            padding: 0%;
-            list-style: none;
-        }
-        .banner{
-           
-            width: 100%;
-            height: 90vh;
-            background-color: #ccc;
-            background:linear-gradient(115deg, #FAF8F1 50% , transparent 50%) center center /100% 100% , url("https://picsum.photos/1200/600?randoms=10") right center /auto 100%;
-        }
-        .container1{
-            height: 100%;
-            width: 1400px;
-            margin: auto;
-
-        }
-        .banner-text{
-            font-family: 'Noto Sans TC', sans-serif;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .banner-text h1{
-            font-size: 80px;
-            border-bottom: 1px solid black;
-        }
-        .banner-text h1 small{
-            display: block;
-            font-size: 53px;
-        }
-         table{
-            text-align: center;
-            /* background-color: burlywood;  */
-        }
-       .container1{
-            border: 5px black;
-           
-       }
-        .forum_page{
-            text-align: center;
-            border: 1px;
-           
-        }
-        .forum_title{
-            text-align: center;
-            margin-top: 50px;
-        }
-        .forum_article_type{
-           
-            vertical-align: baseline;
-        }
-        footer{
-            position: absolute;
-             bottom: 0%;
-        }
-    
-        .forum_function{
-        
-        }
-        
-
-    </style>
   </head>
 
   <body>
     <header>
+      <!-- 最上面的那條開始 -->
       <nav
         class="navbar navbar-expand-md fixed-top navbar-dark bg-headercolor"
         aria-label="Fourth navbar example"
@@ -144,7 +75,10 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="forum_welcome.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="forum_welcome.html"
                   >論壇</a
                 >
               </li>
@@ -171,8 +105,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >登入</a
-                ><!--active是調整成高亮
-                -->
+                ><!--active是調整成高亮-->
               </li>
               <!-- Button trigger modal -->
               <button
@@ -188,12 +121,13 @@
         </div>
       </nav>
     </header>
+    <!-- 最上面的那條結束 -->
     <main>
       <!-- go to top -->
       <div class="to-top">
         <a href="#">TOP</a>
       </div>
-      <!-- Modal註冊彈跳視窗 -->
+      <!-- Model註冊彈跳視窗 -->
       <div
         class="modal fade"
         id="staticBackdrop"
@@ -279,21 +213,118 @@
         </div>
       </div>
       <!-- model end -->
-      
-      <div class="banner">
-        <div class="container1">
-            <div class="banner-text">
-                <h1>Coffee Beans
-                    <small>
-                        一起留下生活的紀錄吧！
-                    </small>
-                </h1>
-                <a href="forum.html" class="forum_link" style="color: brown;">Start the journey</a>
-            </div>
+      <hr />
+      <h1 class="rest_dish_select_word_color">您的購物車 :</h1>
+      <hr class="featurette-divider" />
+      <fieldset class="mb-3">
+        <legend>預計取餐時間 :</legend>
+        <div class="form-check">
+          <input
+            type="radio"
+            checked="checked"
+            name="radios"
+            class="form-check-input"
+            id="exampleRadio1"
+          />
+          <label class="form-check-label" for="exampleRadio1"
+            >盡快(最快取餐時間30分鐘)</label
+          >
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="radio"
+            name="radios"
+            class="form-check-input"
+            id="exampleRadio2"
+          />
+          <label class="form-check-label" for="exampleRadio2"
+            >預約未來訂單(可預約3日內)</label
+          >
+        </div>
+      </fieldset>
+      <hr class="featurette-divider" />
+      <h2>您的訂單 :</h2>
+      <div class="row featurette">
+        <div class="col-md-5">
+          <!-- <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          > -->
+          <img
+            src="images\coffeesohp5.jpg"
+            class="figure-img img-fluid rounded"
+            alt="Coffee Shop"
+          />
+          <title>Placeholder</title>
+          <!-- <rect width="100%" height="100%" fill="#eee" />
+            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> -->
+          <!-- </svg> -->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">
+            餐廳二: Kizuna 絆<br />
+            <span class="text-muted">與家人一同享受美好時光!</span>
+          </h2>
+          <p class="lead">
+            Some great placeholder content for the first featurette here.
+            Imagine some exciting prose here.
+          </p>
+          <p>
+            <a class="btn rest-btn-primary" href="#">預約訂位</a>
+            <a class="btn rest-btn-primary" href="rest_dish_select.html"
+              >線上點餐</a
+            >
+          </p>
         </div>
       </div>
-      
-      
+      <hr class="featurette-divider" />
+      <div class="row featurette">
+        <div class="col-md-5">
+          <!-- <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          > -->
+          <img
+            src="images\coffeesohp4.jpg"
+            class="figure-img img-fluid rounded"
+            alt="Coffee Shop"
+          />
+          <title>Placeholder</title>
+          <!-- <rect width="100%" height="100%" fill="#eee" />
+            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> -->
+          <!-- </svg> -->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">
+            餐廳三: 旅人 Cafe <br />
+            <span class="text-muted">為旅途中的你帶來活力!</span>
+          </h2>
+          <p class="lead">
+            Some great placeholder content for the first featurette here.
+            Imagine some exciting prose here.
+          </p>
+          <p>
+            <a class="btn rest-btn-primary" href="#">預約訂位</a>
+            <a class="btn rest-btn-primary" href="rest_dish_select.html"
+              >線上點餐</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- <hr class="featurette-divider" /> -->
+    </main>
     <!-- footer -->
     <footer
       class="container-fluid mt-5 bg-footercolor text-center text-light link- p-3"
