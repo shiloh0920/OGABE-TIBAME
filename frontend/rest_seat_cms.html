@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.108.0" />
-    <title>OGABE|線上訂餐</title>
+    <title>OGABE|訂位後台</title>
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="dist/css/carousel.css" rel="stylesheet" />
     <link href="dist/css/my.css" rel="stylesheet" />
@@ -76,15 +76,12 @@
               </li>
 
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="forum_welcome.html"
+                <a class="nav-link" aria-current="page" href="breakpoint.html"
                   >論壇</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="rest_index.html"
+                <a class="nav-link" aria-current="page" href="index_rest.html"
                   >線上訂餐</a
                 >
               </li>
@@ -214,150 +211,83 @@
         </div>
       </div>
       <!-- model end -->
-      <!-- body內文開始 -->
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-5">
-          <!-- <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          > -->
-          <img
-            src="images\coffeesohp3.jpg"
-            class="figure-img img-fluid rounded"
-            alt="Coffee Shop"
-          />
-          <title>Placeholder</title>
-          <!-- <rect width="100%" height="100%" fill="#eee" />
-            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> -->
-          <!-- </svg> -->
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">
-            餐廳一: Mo Cafe<br />
-            <span class="text-muted">與毛小孩同行!</span>
-          </h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-          <p>
-            <a class="btn rest-btn-primary" href="rest_seat_reservation.html"
-              >預約訂位</a
-            >
-            <a class="btn rest-btn-primary" href="rest_dish_select.html"
-              >線上點餐</a
-            >
-          </p>
-          <!-- <button
-            type="button"
-            class="btn rest-btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#"
-          >
-            預約訂位
-          </button>
-          <button
-            type="button"
-            class="btn rest-btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#rest_dish_select.html"
-          >
-            線上點餐
-          </button> -->
-        </div>
+      <div class="container-fluid pt-5 px-5">
+        <h1 class="h_center">訂位系統後台</h1>
       </div>
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-5">
-          <!-- <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          > -->
-          <img
-            src="images\coffeesohp5.jpg"
-            class="figure-img img-fluid rounded"
-            alt="Coffee Shop"
-          />
-          <title>Placeholder</title>
-          <!-- <rect width="100%" height="100%" fill="#eee" />
-            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> -->
-          <!-- </svg> -->
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">
-            餐廳二: Kizuna 絆<br />
-            <span class="text-muted">與家人一同享受美好時光!</span>
-          </h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-          <p>
-            <a class="btn rest-btn-primary" href="rest_seat_reservation.html"
-              >預約訂位</a
-            >
-            <a class="btn rest-btn-primary" href="rest_dish_select.html"
-              >線上點餐</a
-            >
-          </p>
-        </div>
+      <hr />
+      <h2 class="h_center">訂位管理</h2>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col"><a class="btn btn-secondary">全選</a></th>
+            <th scope="col">訂位流水號</th>
+            <th scope="col">訂位成立時間</th>
+            <th scope="col">所選座位</th>
+            <th scope="col">消費者姓名</th>
+            <th scope="col">手機號碼</th>
+            <th scope="col">備註</th>
+            <th scope="col">操作</th>
+          </tr>
+        </theadclass=bg-columncolor>
+        <tbody>
+          <tr>
+            <th>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+            </th>
+            <th scope="row">1</th>
+            <td>2023.01.06</td>
+            <td>2,3,4</td>
+            <td>Yeeee</td>
+            <td>0912123123</td>
+            <td>有寵物</td>
+            <td>完成</td>
+          </tr>
+          <tr>
+            <th>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+            </th>
+            <th scope="row">2</th>
+            <td>2023.01.15</td>
+            <td>12,13</td>
+            <td>Ann</td>
+            <td>0912456456</td>
+            <td>有兒童</td>
+            <td>完成</td>
+          </tr>
+          <tr>
+            <th>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+            </th>
+            <th scope="row">3</th>
+            <td>2023.01.14</td>
+            <td>取消訂位</td>
+            <td>Brett</td>
+            <td>0934789789</td>
+            <td>無</td>
+            <td>刪除訂位</td>
+            <!-- <td colspan="2">Larry the Bird</td> -->
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <a class="btn btn-outline-secondary">新增</a>
+        <a class="btn btn-outline-secondary">修改</a>
+        <a class="btn btn-outline-secondary">刪除</a>
+        <a class="btn btn-outline-secondary">查詢</a>
       </div>
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-5">
-          <!-- <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          > -->
-          <img
-            src="images\coffeesohp4.jpg"
-            class="figure-img img-fluid rounded"
-            alt="Coffee Shop"
-          />
-          <title>Placeholder</title>
-          <!-- <rect width="100%" height="100%" fill="#eee" />
-            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> -->
-          <!-- </svg> -->
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">
-            餐廳三: 旅人 Cafe <br />
-            <span class="text-muted">為旅途中的你帶來活力!</span>
-          </h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-          <p>
-            <a class="btn rest-btn-primary" href="rest_seat_reservation.html"
-              >預約訂位</a
-            >
-            <a class="btn rest-btn-primary" href="rest_dish_select.html"
-              >線上點餐</a
-            >
-          </p>
-        </div>
-      </div>
-      <!-- <hr class="featurette-divider" /> -->
     </main>
     <!-- footer -->
     <footer
