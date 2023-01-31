@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta
+			name="author"
+			content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+		/>
+		<meta name="generator" content="Hugo 0.108.0" />
+		<title>OGABE|首頁</title>
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="dist/css/carousel.css" rel="stylesheet" />
+		<link href="dist/css/my.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header>
+			<!-- 最上面的那條開始 -->
+			<nav
+				class="navbar navbar-expand-md fixed-top navbar-dark bg-headercolor"
+				aria-label="Fourth navbar example"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html"
+						><img src="images\ogabecolor.png" alt="Ogabe Logo"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarsExample04"
+						aria-controls="navbarsExample04"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse flex-grow-0"
+						id="navbarsExample04"
+					>
+						<ul class="navbar-nav me-auto mb-2 mb-md-0">
+							<!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >首頁</a
+                >
+              </li> -->
+							<!-- <li class="nav-item">
+                <a class="nav-link" href="guideline.html">規格書</a>
+              </li> -->
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html"
+									>最新消息</a
+								>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>購物商城</a
+								>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="breakpoint.html">咖啡豆</a>
+									</li>
+									<li><a class="dropdown-item" href="#">咖啡器具</a></li>
+									<li>
+										<a class="dropdown-item" href="#">組合活動</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="forum_welcome.html"
+									>論壇</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="rest_index.html"
+									>線上訂餐</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="course_index.html"
+									>體驗課程</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html"
+									>優惠活動</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html"
+									>小遊戲</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="index.html"
+									>登入</a
+								><!--active是調整成高亮-->
+							</li>
+							<!-- Button trigger modal -->
+							<button
+								type="button"
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#staticBackdrop"
+							>
+								註冊
+							</button>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- 最上面的那條結束 -->
+		<main>
+			<!-- go to top -->
+			<div class="to-top">
+				<a href="#">TOP</a>
+			</div>
+			<!-- Model註冊彈跳視窗 -->
+			<div
+				class="modal fade"
+				id="staticBackdrop"
+				data-bs-backdrop="static"
+				data-bs-keyboard="false"
+				tabindex="-1"
+				aria-labelledby="staticBackdropLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog" role="document">
+					<div class="modal-content rounded-4 shadow">
+						<div class="modal-header p-5 pb-4 border-bottom-0">
+							<!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+							<h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body p-5 pt-0">
+							<form class="">
+								<div class="form-floating mb-3">
+									<input
+										type="email"
+										class="form-control rounded-3"
+										id="floatingInput"
+										placeholder="name@example.com"
+									/>
+									<label for="floatingInput">Email address</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input
+										type="password"
+										class="form-control rounded-3"
+										id="floatingPassword"
+										placeholder="Password"
+									/>
+									<label for="floatingPassword">Password</label>
+								</div>
+								<button
+									class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+									type="submit"
+								>
+									Sign up
+								</button>
+								<small class="text-muted"
+									>By clicking Sign up, you agree to the terms of use.</small
+								>
+								<hr class="my-4" />
+								<h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+								<button
+									class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3"
+									type="submit"
+								>
+									<svg class="bi me-1" width="16" height="16">
+										<use xlink:href="#twitter" />
+									</svg>
+									Sign up with Twitter
+								</button>
+								<button
+									class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3"
+									type="submit"
+								>
+									<svg class="bi me-1" width="16" height="16">
+										<use xlink:href="#facebook" />
+									</svg>
+									Sign up with Facebook
+								</button>
+								<button
+									class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3"
+									type="submit"
+								>
+									<svg class="bi me-1" width="16" height="16">
+										<use xlink:href="#github" />
+									</svg>
+									Sign up with GitHub
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- model end -->
+			<!-- 輪播區carousel開始 -->
+			<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="images\coffeesohp7dark.jpg"
+							class="figure-img img-fluid rounded"
+							alt="Coffee Shop"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" /> -->
+						<!--滾動視窗調顏色的地方-->
+						<div class="container">
+							<div class="carousel-caption text-start">
+								<h1>心動不如馬上行動!</h1>
+								<p>
+									現在註冊會員，即可享有一系列優惠活動，今天就加入我們，一起享受咖啡所帶來的喜悅吧!
+								</p>
+								<p>
+									<a class="btn btn-lg btn-primary" href="#">註冊會員</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="images\coffeeshop11dark.jpeg"
+							class="figure-img img-fluid rounded"
+							alt="Coffee Shop"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" /> -->
+						<!--滾動視窗調顏色的地方-->
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>獨樂樂，不如眾樂樂!</h1>
+								<p>
+									歡迎來到OGABE論壇，與世界各地的咖啡愛好者互相"切磋"、討論、分享你對咖啡的喜好!
+								</p>
+								<p><a class="btn btn-lg btn-primary" href="#">加入論壇</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="images\coffeesohp6dark.jpg"
+							class="figure-img img-fluid rounded"
+							alt="Coffee Shop"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" /> -->
+						<!--滾動視窗調顏色的地方-->
+						<div class="container">
+							<div class="carousel-caption text-end">
+								<h1>再忙，也要跟你喝杯咖啡!</h1>
+								<p>
+									現代人步調繁忙、生活圈小，沒時間交朋友，也沒時間慢慢品嘗咖啡，<br />既如此，何不給自己一個下午，與咖啡來場美麗的邂逅!
+								</p>
+								<p>
+									<a class="btn btn-lg btn-primary" href="#">購物商城</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#myCarousel"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#myCarousel"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!-- 輪播區carousel結束 -->
+			<!-- 三個圖區開始 -->
+			<div class="container marketing">
+				<div class="row">
+					<div class="col-lg-4">
+						<title>基礎拉花</title>
+						<img
+							src="images\course_latteart.jpg"
+							class="figure-img img-fluid rounded"
+							alt="Mo Cafe"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
+						<h2 class="fw-normal">基礎拉花</h2>
+						<p class="height-80">
+							Some representative placeholder content for the three columns of
+							text below the carousel. This is the first column.
+						</p>
+						<p class="height-20 rest_dish_select_price_color">單價: NT$1200</p>
+						<label for="exampleSelect" class="form-label rest_dish_select_qty"
+							>人數:
+							<select class="form-select" id="exampleSelect">
+								<!-- <option selected>請選擇上課人數</option> -->
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></label
+						>
+
+						<br />
+						<p>
+							<button
+								type="button"
+								class="btn rest-btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#"
+							>
+								我想上課
+							</button>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<title>基礎烘焙及實務</title>
+						<img
+							src="images\course111.jpg"
+							class="figure-img img-fluid rounded"
+							alt="Coffee Shop"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
+						<h2 class="fw-normal">基礎烘焙及實務</h2>
+						<p class="height-80">
+							Another exciting bit of representative placeholder content. This
+							time, we've moved on to the second column.
+						</p>
+						<p class="height-20 rest_dish_select_price_color">單價: NT$2000</p>
+						<label for="exampleSelect" class="form-label rest_dish_select_qty"
+							>人數:
+							<select class="form-select" id="exampleSelect">
+								<!-- <option selected>請選擇上課人數</option> -->
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></label
+						>
+
+						<br />
+						<p>
+							<button
+								type="button"
+								class="btn rest-btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#"
+							>
+								我想上課
+							</button>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<title>基礎萃取</title>
+						<img
+							src="images\course222.jpg"
+							class="figure-img img-fluid rounded"
+							alt="Coffee Shop"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
+						<h2 class="fw-normal">基礎萃取</h2>
+						<p class="height-80">
+							And lastly this, the third column of representative placeholder
+							content.representative placeholder content.
+						</p>
+						<p class="height-20 rest_dish_select_price_color">單價: NT$1400</p>
+						<label for="exampleSelect" class="form-label rest_dish_select_qty"
+							>人數:
+							<select class="form-select" id="exampleSelect">
+								<!-- <option selected>請選擇上課人數</option> -->
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></label
+						>
+
+						<br />
+						<p>
+							<button
+								type="button"
+								class="btn rest-btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#"
+							>
+								我想上課
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container marketing">
+				<div class="row">
+					<div class="col-lg-4">
+						<title>品嚐咖啡及杯測</title>
+						<img
+							src="images\course111.jpg"
+							class="figure-img img-fluid rounded"
+							alt="Mo Cafe"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
+						<h2 class="fw-normal">品嚐咖啡及杯測</h2>
+						<p class="height-80">
+							Some representative placeholder content for the three columns of
+							text below the carousel. This is the first column.
+						</p>
+						<p class="height-20 rest_dish_select_price_color">單價: NT$1600</p>
+						<label for="exampleSelect" class="form-label rest_dish_select_qty"
+							>人數:
+							<select class="form-select" id="exampleSelect">
+								<!-- <option selected>請選擇上課人數</option> -->
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></label
+						>
+
+						<br />
+						<p>
+							<button
+								type="button"
+								class="btn rest-btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#"
+							>
+								我想上課
+							</button>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<title>手沖及虹吸咖啡體驗班</title>
+						<img
+							src="images\course_pour.jpg"
+							class="figure-img img-fluid rounded"
+							alt="Coffee Shop"
+						/>
+						<!-- <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> -->
+						<h2 class="fw-normal">手沖及虹吸咖啡體驗班</h2>
+						<p class="height-80">
+							Another exciting bit of representative placeholder content. This
+							time, we've moved on to the second column.
+						</p>
+						<p class="height-20 rest_dish_select_price_color">單價: NT$2000</p>
+						<label for="exampleSelect" class="form-label rest_dish_select_qty"
+							>人數:
+							<select class="form-select" id="exampleSelect">
+								<!-- <option selected>請選擇上課人數</option> -->
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></label
+						>
+
+						<br />
+						<p>
+							<button
+								type="button"
+								class="btn rest-btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#"
+							>
+								我想上課
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container marketing"></div>
+		</main>
+		<!-- footer -->
+		<footer
+			class="container-fluid mt-5 bg-footercolor text-center text-light link- p-3"
+		>
+			<p>
+				<a href="#" class="text-info">關於我們</a> &middot;
+				<a href="#" class="text-info">Q&A</a> &middot;
+				<a href="#" class="text-info">顧客權益</a> &middot;
+				<a href="#" class="text-info">客服中心</a>
+			</p>
+		</footer>
+		<script src="dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
