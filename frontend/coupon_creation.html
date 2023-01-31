@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Custom styles for header */
+        * {
+            box-sizing: border-box;
+            font-size: 1 rem;
+        }
+
+        .header {
+            background-color: #A39186;
+        }
+
+        .header img {
+
+            height: 120px;
+
+        }
+
+        /* Custom styles for sidebar */
+        .accordion {
+            background-color: #D9D9D9;
+            color: black;
+            height: 100vh;
+            padding-top: 50px;
+            padding-right: 20px;
+            padding-left: 20px;
+
+        }
+
+        /* Custom styles for section */
+        .section h1 {
+            text-align: center;
+        }
+
+        /* Custom styles for forms */
+        form {
+            width: 50%;
+        }
+
+        form .form-group {
+            margin: 1rem;
+        }
+
+        form label {
+            margin-bottom: 0.5rem;
+        }
+
+
+
+
+
+
+        /* Custom styles for footer */
+        .footer {
+            background-color: #4E6162;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header d-flex align-items-center justify-content-between p-3">
+        <img src="image/ogabecolor21.png" class="img-thumbnail" rounded float-start alt="Logo">
+    </div>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="accordion col-2" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            會員管理
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <nav class="nav flex-column">
+
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            購物系統管理 </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <nav class="nav flex-column">
+
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            優惠系統管理 </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <nav class="nav flex-column">
+
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            論壇系統管理 </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <nav class="nav flex-column">
+
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            客服系統管理 </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <nav class="nav flex-column">
+
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            點餐點餐系統管理 </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <nav class="nav flex-column">
+
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            課程管理系統 </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <nav class="nav flex-column">
+
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 section p-3 d-flex justify-content-center">
+                <form>
+                    <h1>優惠券</h1>
+                    <div class="form-group ">
+                        <label for="input0">優惠券名稱:</label>
+                        <input type="text" class="form-control" id="input0" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="input1">商品類別:</label>
+                        <input type="text" class="form-control" id="input1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input2">商品:</label>
+                        <input type="text" class="form-control" id="input2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input3">優惠券碼:</label>
+                        <input type="text" class="form-control" id="input3" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input5">優惠券數量:</label>
+                        <input type="text" class="form-control" id="input5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input6">優惠券折數:</label>
+                        <input type="text" class="form-control" id="input6" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input7">最低購買金額:</label>
+                        <input type="text" class="form-control" id="input7" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input8">每位顧客最多使用次數:</label>
+                        <input type="text" class="form-control" id="input8" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input9">會員等級:</label>
+                        <input type="text" class="form-control" id="input9" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input10">優惠券開始日期</label>
+                        <input type="date" class="form-control" id="input10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input11">優惠券結束日期:</label>
+                        <input type="date" class="form-control " id="input11" required>
+                    </div>
+
+                    <div><button type="submit" class="btn btn-primary m-lg-3">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer d-flex p-3 fixed-bottom "> -->
+    </div>
+    <script src="dist/js/jquery-3.5.1.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
