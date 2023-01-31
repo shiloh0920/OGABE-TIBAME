@@ -216,43 +216,51 @@
       <hr />
       <h1 class="rest_dish_select_word_color text-center">您的訂位</h1>
       <hr class="featurette-divider" />
+      <h2 class="text-center">基本資訊</h2>
       <div class="mb-3">
-        <label for="customername" class="form-label rest_dish_select_qty"
-          >顧客姓名 :<input
-            type="customername"
-            class="form-control"
-            placeholder="請輸入姓名"
-            id="customername1"
-        /></label>
+        <div class="rest_dish_select_qty">
+          顧客姓名 :
+          <label for="customername" class="form-label"
+            ><input
+              type="customername"
+              class="form-control"
+              placeholder="請輸入姓名"
+              id="customername1"
+          /></label>
+        </div>
       </div>
       <div class="mb-3">
-        <label for="customernumber" class="form-label rest_dish_select_qty"
-          >顧客連絡電話 :<input
-            type="customernumber"
-            class="form-control"
-            placeholder="請輸入手機號碼"
-            id="customernumber1"
-        /></label>
+        <div class="rest_dish_select_qty">
+          顧客電話 :
+          <label for="customernumber" class="form-label"
+            ><input
+              type="customernumber"
+              class="form-control"
+              placeholder="請輸入手機號碼"
+              id="customernumber1"
+          /></label>
+        </div>
       </div>
-      <label for="exampleSelect" class="form-label rest_dish_select_qty"
-        >顧客人數 :
-        <select class="form-select" id="exampleSelect">
-          <!-- <option selected>請選擇人數</option> -->
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select></label
-      >
-
+      <div class="rest_dish_select_qty">
+        訂位人數 :
+        <label for="exampleSelect" class="form-label">
+          <select class="form-select" id="exampleSelect">
+            <!-- <option selected>請選擇人數</option> -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select></label
+        >
+      </div>
       <br />
       <fieldset class="mb-3">
-        <legend>訂位時段 :</legend>
-        <div class="form-check">
+        <legend class="rest_dish_select_qty">訂位時段 :</legend>
+        <div class="form-check rest_dish_select_qty">
           <input
             type="radio"
             checked="checked"
@@ -260,28 +268,39 @@
             class="form-check-input"
             id="exampleRadio1"
           />
-          <label class="form-check-label" for="exampleRadio1"
-            >中午(12:00)</label
-          >
+          <label class="form-check-label" for="exampleRadio1">中午-12:00</label>
         </div>
-        <div class="mb-3 form-check">
+        <div class="mb-3 form-check rest_dish_select_qty">
           <input
             type="radio"
             name="radios"
             class="form-check-input"
             id="exampleRadio2"
           />
-          <label class="form-check-label" for="exampleRadio2"
-            >下午(17:00)</label
-          >
+          <label class="form-check-label" for="exampleRadio2">下午-17:00</label>
         </div>
       </fieldset>
       <hr class="featurette-divider" />
       <h2 class="text-center">座位劃位</h2>
-      <hr class="featurette-divider" />
-      <div>
-        <a class="btn btn-primary" href="rest_reservation_success.html">送出</a>
+      <div class="container marketing">
+        <div class="row">
+          <div class="h_center">
+            <title>座位選擇</title>
+            <img
+              src="images\rest_seat.jpg"
+              class="figure-img img-fluid rounded"
+              alt="rest seat"
+            />
+          </div>
+        </div>
       </div>
+
+      <div class="h_center">
+        <a class="btn btn-warning" href="rest_reservation_success.html"
+          >送出資料</a
+        >
+      </div>
+      <hr class="featurette-divider" />
       <!-- <hr class="featurette-divider" /> -->
     </main>
     <!-- footer -->
