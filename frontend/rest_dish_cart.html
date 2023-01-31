@@ -13,6 +13,7 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="dist/css/carousel.css" rel="stylesheet" />
     <link href="dist/css/my.css" rel="stylesheet" />
+    <link href="dist/css/guideline.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -214,10 +215,10 @@
       </div>
       <!-- model end -->
       <hr />
-      <h1 class="rest_dish_select_word_color">您的購物車 :</h1>
+      <h1 class="rest_dish_select_word_color h_center">您的購物車 :</h1>
       <hr class="featurette-divider" />
       <fieldset class="mb-3">
-        <legend>預計取餐時間 :</legend>
+        <h2 class="h_center">預計取餐時間 :</h2>
         <div class="form-check">
           <input
             type="radio"
@@ -243,86 +244,71 @@
         </div>
       </fieldset>
       <hr class="featurette-divider" />
-      <h2>您的訂單 :</h2>
-      <div class="row featurette">
-        <div class="col-md-5">
-          <!-- <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          > -->
-          <img
-            src="images\coffeesohp5.jpg"
-            class="figure-img img-fluid rounded"
-            alt="Coffee Shop"
-          />
-          <title>Placeholder</title>
-          <!-- <rect width="100%" height="100%" fill="#eee" />
-            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> -->
-          <!-- </svg> -->
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">
-            餐廳二: Kizuna 絆<br />
-            <span class="text-muted">與家人一同享受美好時光!</span>
-          </h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-          <p>
-            <a class="btn rest-btn-primary" href="#">預約訂位</a>
-            <a class="btn rest-btn-primary" href="rest_dish_select.html"
-              >線上點餐</a
+      <h2 class="h_center">您的訂單 :</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-2 rest_dish_select_qty">美式咖啡</div>
+          <div class="col-7 rest_dish_select_qty">
+            數量:
+            <label for="exampleSelect" class="form-label"
+              ><select class="form-select" id="exampleSelect">
+                <!-- <option selected>請選擇數量</option> -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select></label
             >
-          </p>
+          </div>
+          <div class="col-2 rest_dish_select_qty">NT$120</div>
+          <div class="col-1">移除</div>
         </div>
+        <hr />
+        <div class="row">
+          <div class="col-2 rest_dish_select_qty">卡布奇諾</div>
+          <div class="col-7 rest_dish_select_qty">
+            數量:
+            <label for="exampleSelect" class="form-label"
+              ><select class="form-select" id="exampleSelect">
+                <!-- <option selected>請選擇數量</option> -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select></label
+            >
+          </div>
+          <div class="col-2 rest_dish_select_qty">NT$140</div>
+          <div class="col-1">移除</div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-7 rest_dish_select_qty"></div>
+          <div class="col-2 rest_dish_select_qty">總金額:</div>
+          <div class="col-2 rest_dish_select_qty rest_dish_select_price_color">
+            NT$260
+          </div>
+          <div class="col-1 rest_dish_select_qty"></div>
+        </div>
+        <p>
+          <a class="btn btn-secondary" href="#">取消訂餐</a>
+          <a class="btn btn-warning" href="#">前往結帳</a>
+        </p>
       </div>
       <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-5">
-          <!-- <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          > -->
-          <img
-            src="images\coffeesohp4.jpg"
-            class="figure-img img-fluid rounded"
-            alt="Coffee Shop"
-          />
-          <title>Placeholder</title>
-          <!-- <rect width="100%" height="100%" fill="#eee" />
-            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> -->
-          <!-- </svg> -->
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">
-            餐廳三: 旅人 Cafe <br />
-            <span class="text-muted">為旅途中的你帶來活力!</span>
-          </h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-          <p>
-            <a class="btn rest-btn-primary" href="#">預約訂位</a>
-            <a class="btn rest-btn-primary" href="rest_dish_select.html"
-              >線上點餐</a
-            >
-          </p>
-        </div>
-      </div>
+
       <!-- <hr class="featurette-divider" /> -->
     </main>
     <!-- footer -->
